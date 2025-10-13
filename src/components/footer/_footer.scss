@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px 0;
+    background: #0c1e3e;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            color: #FFF;
+            line-height: 22px;
+
+            span {
+                color: #84479c;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px 10px;
+
+        &__content {
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .footer {
+        padding: 18px 15px;
+
+        &__content {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}

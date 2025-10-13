@@ -1,0 +1,348 @@
+.rateDepartment {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f5f6fa;
+
+    &__content {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+
+    &-card {
+        width: 100%;
+        max-width: 700px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+    }
+
+    .dept-info {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h1 {
+            color: #182b49;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #182b49;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+    }
+
+    .why-rateDepartment {
+        background: #f8f9fb;
+        padding: 16px;
+        border-radius: 12px;
+        margin-bottom: 24px;
+
+        h4 {
+            color: #182b49;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+    }
+
+    &-form {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 12px;
+            color: #182b49;
+            font-size: 22px;
+        }
+
+        input,
+        textarea {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+            resize: vertical;
+            transition: all 0.3s ease;
+
+            &:focus {
+                outline: none;
+                border-color: #182b49;
+                box-shadow: 0 0 0 2px rgba(24, 43, 73, 0.15);
+            }
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #182b49;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #1f3b6d;
+            }
+
+            &:active {
+                transform: scale(0.97);
+                background: #14213d;
+            }
+        }
+    }
+
+
+    &__content-main {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      &-main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 30px;
+      }
+    
+      &-card-main {
+        width: 100%;
+        max-width: 900px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 32px;
+      }
+    
+      .dept-info {
+        text-align: center;
+        margin-bottom: 20px;
+    
+        h3 {
+          color: #182b49;
+          font-size: 24px;
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+    
+        .short-info {
+          color: #666;
+          font-size: 15px;
+          line-height: 1.6;
+          max-width: 750px;
+          margin: 0 auto;
+        }
+      }
+    
+      .dept-content {
+        margin-top: 20px;
+        color: #333;
+        line-height: 1.7;
+        font-size: 15px;
+    
+        h1, h2, h3, h4 {
+          color: #182b49;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          line-height: 1.3;
+        }
+    
+        p {
+          margin-bottom: 15px;
+        }
+    
+        ul, ol {
+          margin: 10px 0 15px 25px;
+          line-height: 1.6;
+        }
+    
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 20px auto;
+          border-radius: 8px;
+        }
+    
+        a {
+          color: #182b49;
+          text-decoration: underline;
+    
+          &:hover {
+            color: #1f3b6d;
+          }
+        }
+    
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px 0;
+          font-size: 14px;
+    
+          th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+          }
+    
+          th {
+            background: #f0f2f5;
+            font-weight: 600;
+            color: #182b49;
+          }
+    
+          tr:nth-child(even) {
+            background: #fafafa;
+          }
+        }
+      }
+
+    .footer {
+        margin-top: auto;
+    }
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 480px) {
+    .rateDepartment-card {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .dept-info h1 {
+        font-size: 20px;
+    }
+
+    .dept-info h3 {
+        font-size: 16px;
+    }
+
+    .dept-info p {
+        font-size: 14px;
+    }
+
+    .why-rateDepartment {
+        padding: 12px;
+    }
+
+    .rateDepartment-form h2 {
+        font-size: 18px;
+    }
+
+    .rateDepartment-form input,
+    .rateDepartment-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .rateDepartment-form button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .rateDepartment-card-main {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .dept-info h3 {
+        font-size: 18px;
+    }
+
+    .dept-info .short-info {
+        font-size: 14px;
+    }
+
+    .dept-content {
+        font-size: 14px;
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 16px;
+        }
+    }
+
+    .dept-content table {
+        font-size: 12px;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .rateDepartment-card {
+        padding: 20px;
+    }
+
+    .dept-info h1 {
+        font-size: 24px;
+    }
+
+    .dept-info h3 {
+        font-size: 18px;
+    }
+
+    .dept-info p {
+        font-size: 15px;
+    }
+
+    .rateDepartment-form h2 {
+        font-size: 20px;
+    }
+
+    .rateDepartment-form input,
+    .rateDepartment-form textarea {
+        font-size: 15px;
+    }
+
+    .rateDepartment-form button {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+
+    .rateDepartment-card-main {
+        padding: 24px;
+    }
+
+    .dept-info h3 {
+        font-size: 20px;
+    }
+
+    .dept-content {
+        font-size: 14.5px;
+    }
+}

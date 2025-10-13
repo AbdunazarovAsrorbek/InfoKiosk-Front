@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1240px;
+  }
+
+  @media (min-width: 1536px) {
+    max-width: 1536px;
+  }
+}
+
+.infoRateDepartment {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+
+
+  &-main {
+    flex: 1;
+    padding-top: 30px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+.ratePage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &-main {
+
+    flex: 1;
+
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 500px;
+  margin: 25px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+
+    &:focus {
+      border-color: #4e73df;
+      box-shadow: 0 0 0 2px rgba(78, 115, 223, 0.2);
+    }
+  }
+
+  textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  button {
+    background: #4e73df;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: #375ac1;
+    }
+  }
+}
+
+
+// Components
+@import "../components/navbar/navbar";
+@import "../components/header/header";
+@import "../components/slider/slider";
+@import "../components/oneClickRate/oneClickRate";
+@import "../components/footer/footer";
+@import "../components/rateDepartmentPage/rateDepartment";
+@import "../components/peopleData/peopleData.scss";
+
+
+// Pages
+@import "../pages/home/home";
+
+
+
+
+$bg1: #182B49;
+$bg2: #F6F9FF;
+$gr-bg: linear-gradient(90deg, #4a2559 0%, #182B49 100%);
+$gr-bg2: linear-gradient(90deg, #84479c 0%, #1d2f4f 100%);
+$copy-bg: #122340;
+$blue: #2c97ea;
+$green: #84479c;
+$green2: #122340;
+$red: #ff6f6f;
+$purple: #84479c;
+$yellow: #fbab19;
+$black1: #182B49;
+$black2: #444444;
+$text1: #555555;
+$text2: #666666;
+$text3: #969696;
+$text4: #aaaaaa;
+$text5: #cccccc;
+$border1: #eeeeee;
+$border2: #3e3e3e;
+$border3: #dddddd;
+$footer1: #1a1b25;
+$footer2: #16171f;
+$ftext: #8D8E92;
